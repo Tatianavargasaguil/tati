@@ -1,0 +1,38 @@
+<odoo>
+    <record id="author_1" model="library.author">
+        <field name="name">Gabriel García Márquez el mejor</field>
+        <field name="biography">Gabriel García Márquez fue un novelista colombiano, autor de Cien años de soledad.</field>
+    </record>
+    <record id="author_2" model="library.author">
+        <field name="name">Isabel Allende</field>
+        <field name="biography">Isabel Allende es una escritora chilena conocida por su novela La casa de los espíritus.</field>
+    </record>
+
+    <record id="book_1" model="library.book">
+        <field name="title">Cien años de soledad</field>
+        <field name="author_id" ref="author_1"/>
+        <field name="publication_date">1967-05-30</field>
+        <field name="isbn">9780060883287</field>
+        <field name="price">19.99</field>
+        <field name="quantity_in_stock">100</field>
+    </record>
+    <record id="book_2" model="library.book">
+        <field name="title">La casa de los espíritus</field>
+        <field name="author_id" ref="author_2"/>
+        <field name="publication_date">1982-10-01</field>
+        <field name="isbn">9780525433477</field>
+        <field name="price">14.99</field>
+        <field name="quantity_in_stock">50</field>
+    </record>
+
+    <record id="customer_1" model="library.customer">
+        <field name="name">Juan Pérez</field>
+        <field name="contact_details">juan.perez@example.com</field>
+        <field name="customer_since">2020-01-15</field>
+    </record>
+    <record id="customer_2" model="library.customer">
+        <field name="name">María Gómez</field>
+        <field name="contact_details">maria.gomez@example.com</field>
+        <field name="customer_since">2019-11-22</field>
+    </record>
+</odoo>
